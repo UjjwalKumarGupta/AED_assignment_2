@@ -48,4 +48,11 @@ public class CarCatalogHistory {
         this.timeUpdate = timeUpdate;
     }
     
+    public boolean uni(String Serial) {
+        for(carCatalog cl : history) {
+        if(cl.getSerial_number()==(Integer.parseInt(Serial)))
+        return true;
+        }
+        return false;
+}
 }

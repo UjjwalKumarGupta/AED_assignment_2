@@ -309,7 +309,7 @@ public class ViewJPanel extends javax.swing.JPanel {
             }
         
        else {
-            JOptionPane.showMessageDialog(this, "Car cannot Be Created.");} 
+            JOptionPane.showMessageDialog(this, "ERROR! Enter the correct value in the field.");} 
         
     }//GEN-LAST:event_btnUpdateActionPerformed
 

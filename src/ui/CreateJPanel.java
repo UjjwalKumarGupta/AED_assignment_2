@@ -205,7 +205,7 @@ public class CreateJPanel extends javax.swing.JPanel {
         Matcher sM = nP.matcher(txtSeats.getText());
         Matcher sr = nP.matcher(txtSerial.getText());
        
-         if ((!cM.matches()) || (!mM.matches()) || (!ctM.matches()) || (!yM.matches())|| (!sM.matches()) || (!sr.matches()) )
+         if ((!cM.matches()) || (!mM.matches()) || (!ctM.matches()) || (!yM.matches())|| (!sM.matches()) || (!sr.matches()) || history.uni(txtSerial.getText()) )
             {
             check=false;
             }
@@ -242,7 +242,7 @@ public class CreateJPanel extends javax.swing.JPanel {
         JOptionPane.showMessageDialog(this, "New Car added to the Fleet");}
         
         else {
-            JOptionPane.showMessageDialog(this, "Car cannot Be Created.");}
+            JOptionPane.showMessageDialog(this, "ERROR! Enter the correct value in the field.");}
         
         txtCompany.setText("");
         txtYear.setText("");
